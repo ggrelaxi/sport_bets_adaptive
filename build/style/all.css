@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: Rubik, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.wrapper {
+  max-width: 1470px;
+  margin: 0 auto;
+  height: 100%; }
+
+
+.header {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 100vh;
+  max-height: 850px;
+  padding: 60px 315px 0 315px;
+  background: linear-gradient(98.72deg, #010733 0%, rgba(1, 7, 51, 0.8) 48.11%, rgba(1, 7, 51, 0) 76.65%), url("../../../img/header-bg.jpg");
+  overflow: hidden; }
+  .header:before {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -webkit-filter: blur(10px);
+    opacity: 0.7;
+    top: 120px;
+    left: -70px;
+    background-size: cover;
+    background-image: url("../../../img/header-ball.png"); }
+  .header__content {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 100%; }
+    .header__content .content__left .logo {
+      display: flex;
+      align-items: center;
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 180px; }
+      .header__content .content__left .logo img {
+        margin-right: 7px; }
+      .header__content .content__left .logo__text span {
+        color: #245ff7; }
+    .header__content .content__left .description h1 {
+      font-size: 50px;
+      line-height: 130%;
+      font-weight: bold;
+      margin-bottom: 40px; }
+    .header__content .content__left .description p {
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 130%;
+      margin-bottom: 60px;
+      font-weight: 300; }
+    .header__content .content__left .description button {
+      background-color: #245ff7;
+      border-radius: 6px;
+      width: 260px;
+      padding: 20px 30px;
+      height: 59px;
+      color: #ffffff;
+      outline: none;
+      border: none;
+      cursor: pointer; }
+      .header__content .content__left .description button:hover {
+        background-color: #487bff; }
+      .header__content .content__left .description button:active {
+        background-color: #0e49df; }
+    .header__content .content__right {
+      display: flex;
+      align-items: flex-end; }
+
+/*# sourceMappingURL=all.css.map */

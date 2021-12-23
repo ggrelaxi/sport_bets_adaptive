@@ -1,2 +1,2 @@
-# stavki
-Stavki na football
+# gulp-for-dev
+gulp assembly for frontend evelopment
