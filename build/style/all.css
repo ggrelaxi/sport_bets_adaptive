@@ -1,134 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block; }
-
-body {
-  line-height: 1;
-  font-family: Rubik, sans-serif; }
-
-ol,
-ul {
-  list-style: none; }
-
-blockquote,
-q {
-  quotes: none; }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 .wrapper {
   max-width: 1470px;
@@ -141,6 +14,38 @@ table {
   height: 100%;
   padding: 120px 0; }
 
+body {
+  font-family: 'Rubik', sans-serif !important; }
+
+
+.footer {
+  flex: 0 0 auto;
+  background-color: #333333;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 315px;
+  font-weight: normal; }
+  .footer .wrapper__footer {
+    padding: 60px 0; }
+    .footer .wrapper__footer ol li {
+      margin-bottom: 10px; }
+    .footer .wrapper__footer a {
+      color: #ffffff;
+      text-decoration: none;
+      cursor: pointer; }
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 130%;
+    font-weight: normal; }
+    .footer__content .middle p {
+      margin-bottom: 10px; }
+    .footer__content .middle div {
+      margin-bottom: 20px; }
+      .footer__content .middle div img {
+        margin-right: 10px; }
 
 .header {
   position: relative;
@@ -165,7 +70,7 @@ table {
     top: 120px;
     left: -70px;
     background-size: cover;
-    background-image: url("../../../img/header-ball.png"); }
+    background-image: url("build/img/header-ball.png"); }
   .header__content {
     color: white;
     display: flex;
@@ -231,7 +136,7 @@ table {
     bottom: -55px;
     left: -30px;
     background-size: cover;
-    background-image: url("../../../img/header-ball.png"); }
+    background-image: url("build/img/header-ball.png"); }
   .who__can__learn:after {
     content: '';
     position: absolute;
