@@ -22,7 +22,7 @@
         bottom: -55px;
         left: -30px;
         background-size: cover;
-        background-image: url('../../../img/header-ball.png');
+        background-image: url('/img/header-ball.png');
     }
 
     &:after {
@@ -39,7 +39,7 @@
         top: 15px;
         right: -70px;
         background-size: cover;
-        background-image: url('../../../img/header-ball.png');
+        background-image: url('/img/header-ball.png');
     }
 
     & .who__can__lear__header {
@@ -96,13 +96,13 @@
         }
 
         &__block:nth-child(1):after {
-            background: url('../../../img/who-can-img1.png ');
+            background: url('/img/who-can-img1.png ');
         }
         &__block:nth-child(2):after {
-            background: url('../../../img/who-can-img2.png ');
+            background: url('/img/who-can-img2.png ');
         }
         &__block:nth-child(3):after {
-            background: url('../../../img/who-can-img3.png ');
+            background: url('/img/who-can-img3.png ');
         }
     }
 }

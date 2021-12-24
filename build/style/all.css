@@ -1,141 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-  font-family: Rubik, sans-serif;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
@@ -151,6 +17,46 @@ table {
   padding: 120px 0;
 }
 
+body {
+  font-family: "Rubik", sans-serif !important;
+}
+
+.footer {
+  flex: 0 0 auto;
+  background-color: #333333;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 315px;
+  font-weight: normal;
+}
+.footer .wrapper__footer {
+  padding: 60px 0;
+}
+.footer .wrapper__footer ol li {
+  margin-bottom: 10px;
+}
+.footer .wrapper__footer a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: normal;
+}
+.footer__content .middle p {
+  margin-bottom: 10px;
+}
+.footer__content .middle div {
+  margin-bottom: 20px;
+}
+.footer__content .middle div img {
+  margin-right: 10px;
+}
 .header {
   position: relative;
   max-width: 1920px;
@@ -158,7 +64,7 @@ table {
   height: 100vh;
   max-height: 850px;
   padding: 60px 315px 0 315px;
-  background: linear-gradient(98.72deg, #010733 0%, rgba(1, 7, 51, 0.8) 48.11%, rgba(1, 7, 51, 0) 76.65%), url("../../../img/header-bg.jpg");
+  background: linear-gradient(98.72deg, #010733 0%, rgba(1, 7, 51, 0.8) 48.11%, rgba(1, 7, 51, 0) 76.65%), url("/img/header-bg.jpg");
   overflow: hidden;
 }
 .header:before {
@@ -175,7 +81,7 @@ table {
   top: 120px;
   left: -70px;
   background-size: cover;
-  background-image: url("../../../img/header-ball.png");
+  background-image: url("/img/header-ball.png");
 }
 .header__content {
   color: white;
@@ -268,6 +174,48 @@ table {
   font-size: 40px;
   line-height: 130%;
   padding: 24px 30px;
+}
+.whats__learn {
+  width: 100%;
+  padding: 0 315px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.whats__learn__content {
+  display: flex;
+}
+.whats__learn__content .left {
+  width: 520px;
+  margin-right: 30px;
+}
+.whats__learn__content .left h2 {
+  font-size: 50px;
+  line-height: 130%;
+  font-weight: bold;
+}
+.whats__learn__content .left span {
+  color: #245ff7;
+}
+.whats__learn__content .right {
+  width: 740px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 130%;
+  color: #333333;
+  padding-top: 10px;
+}
+.whats__learn__content .right h3 {
+  font-size: 24px;
+  line-height: 130%;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.whats__learn__content .right p {
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: normal;
+  margin-bottom: 30px;
 }
 .who__can__learn {
   background-color: #e8f1f9;
@@ -394,7 +342,7 @@ table {
   bottom: -55px;
   left: -30px;
   background-size: cover;
-  background-image: url("../../../img/header-ball.png");
+  background-image: url("/img/header-ball.png");
 }
 .who__can__learn:after {
   content: "";
@@ -410,7 +358,7 @@ table {
   top: 15px;
   right: -70px;
   background-size: cover;
-  background-image: url("../../../img/header-ball.png");
+  background-image: url("/img/header-ball.png");
 }
 .who__can__learn .who__can__lear__header {
   margin-bottom: 170px;
@@ -460,13 +408,13 @@ table {
   left: 115px;
 }
 .who__can__learn .content__block:nth-child(1):after {
-  background: url("../../../img/who-can-img1.png ");
+  background: url("/img/who-can-img1.png ");
 }
 .who__can__learn .content__block:nth-child(2):after {
-  background: url("../../../img/who-can-img2.png ");
+  background: url("/img/who-can-img2.png ");
 }
 .who__can__learn .content__block:nth-child(3):after {
-  background: url("../../../img/who-can-img3.png ");
+  background: url("/img/who-can-img3.png ");
 }
 .why__bets {
   width: 100%;

@@ -1,0 +1,46 @@
+@import '../variables.scss';
+
+.footer {
+    flex: 0 0 auto;
+    background-color: $color-black;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 315px;
+    font-weight: normal;
+
+    & .wrapper__footer {
+        padding: 60px 0;
+
+        & ol li {
+            margin-bottom: 10px;
+        }
+
+        & a {
+            color: $color-white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        color: $color-white;
+        font-size: 14px;
+        line-height: 130%;
+        font-weight: normal;
+
+        & .middle {
+            & p {
+                margin-bottom: 10px;
+            }
+
+            & div {
+                margin-bottom: 20px;
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
