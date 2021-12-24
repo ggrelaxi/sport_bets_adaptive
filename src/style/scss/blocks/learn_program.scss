@@ -1,0 +1,56 @@
+@import '../variables.scss';
+
+.learn__program{
+  width: 100%;
+  padding: 0 315px;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  & .learn__program__header{
+    & h2 {
+      font-size: 50px;
+      line-height: 130%;
+      font-weight: bold;
+
+      & span {
+        color: $color-blue;
+      }
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 630px 630px;
+    grid-template-rows: 100px ;
+    //grid-column-gap: 30px;
+    //grid-row-gap: 30px;
+    grid-gap: 30px;
+
+    & .item{
+      align-content: center;
+      position: static;
+      width: 497px;
+      height: 31px;
+      left: 103px;
+      top: 34.5px;
+
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 130%;
+
+      color: #FFFFFF;
+      background: #245FF7;
+      border-radius: 4px;
+
+
+      & span{
+        font-size: 40px;
+        line-height: 130%;
+        padding: 24px 30px;
+      }
+    }
+    }
+
+
+
+}
