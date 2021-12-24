@@ -5,7 +5,6 @@ const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const terser = require('gulp-terser');
 const imagemin = require('gulp-imagemin');
-const rebase = require('gulp-css-url-rebase');
 
 const browserSync = require('browser-sync').create();
 

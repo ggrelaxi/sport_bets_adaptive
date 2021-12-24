@@ -29,21 +29,17 @@ body {
   padding: 0 315px;
   font-weight: normal;
 }
-
 .footer .wrapper__footer {
   padding: 60px 0;
 }
-
 .footer .wrapper__footer ol li {
   margin-bottom: 10px;
 }
-
 .footer .wrapper__footer a {
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
 }
-
 .footer__content {
   display: flex;
   justify-content: space-between;
@@ -52,19 +48,15 @@ body {
   line-height: 130%;
   font-weight: normal;
 }
-
 .footer__content .middle p {
   margin-bottom: 10px;
 }
-
 .footer__content .middle div {
   margin-bottom: 20px;
 }
-
 .footer__content .middle div img {
   margin-right: 10px;
 }
-
 .header {
   position: relative;
   max-width: 1920px;
@@ -75,7 +67,6 @@ body {
   background: linear-gradient(98.72deg, #010733 0%, rgba(1, 7, 51, 0.8) 48.11%, rgba(1, 7, 51, 0) 76.65%), url("/img/header-bg.jpg");
   overflow: hidden;
 }
-
 .header:before {
   content: "";
   position: absolute;
@@ -92,14 +83,12 @@ body {
   background-size: cover;
   background-image: url("/img/header-ball.png");
 }
-
 .header__content {
   color: white;
   display: flex;
   justify-content: space-between;
   height: 100%;
 }
-
 .header__content .content__left .logo {
   display: flex;
   align-items: center;
@@ -107,22 +96,18 @@ body {
   font-weight: bold;
   margin-bottom: 180px;
 }
-
 .header__content .content__left .logo img {
   margin-right: 7px;
 }
-
 .header__content .content__left .logo__text span {
   color: #245ff7;
 }
-
 .header__content .content__left .description h1 {
   font-size: 50px;
   line-height: 130%;
   font-weight: bold;
   margin-bottom: 40px;
 }
-
 .header__content .content__left .description p {
   font-weight: normal;
   font-size: 24px;
@@ -130,7 +115,6 @@ body {
   margin-bottom: 60px;
   font-weight: 300;
 }
-
 .header__content .content__left .description button {
   background-color: #245ff7;
   border-radius: 6px;
@@ -142,46 +126,37 @@ body {
   border: none;
   cursor: pointer;
 }
-
 .header__content .content__left .description button:hover {
   background-color: #487bff;
 }
-
 .header__content .content__left .description button:active {
   background-color: #0e49df;
 }
-
 .header__content .content__right {
   display: flex;
   align-items: flex-end;
 }
-
 .whats__learn {
   width: 100%;
   padding: 0 315px;
   max-width: 1920px;
   margin: 0 auto;
 }
-
 .whats__learn__content {
   display: flex;
 }
-
 .whats__learn__content .left {
   width: 520px;
   margin-right: 30px;
 }
-
 .whats__learn__content .left h2 {
   font-size: 50px;
   line-height: 130%;
   font-weight: bold;
 }
-
 .whats__learn__content .left span {
   color: #245ff7;
 }
-
 .whats__learn__content .right {
   width: 740px;
   font-size: 24px;
@@ -190,7 +165,6 @@ body {
   color: #333333;
   padding-top: 10px;
 }
-
 .whats__learn__content .right h3 {
   font-size: 24px;
   line-height: 130%;
@@ -198,14 +172,12 @@ body {
   font-weight: bold;
   margin-bottom: 15px;
 }
-
 .whats__learn__content .right p {
   font-size: 18px;
   line-height: 130%;
   font-weight: normal;
   margin-bottom: 30px;
 }
-
 .who__can__learn {
   background-color: #e8f1f9;
   position: relative;
@@ -214,7 +186,6 @@ body {
   margin: 0 auto;
   padding: 0 315px;
 }
-
 .who__can__learn:before {
   content: "";
   position: absolute;
@@ -231,7 +202,6 @@ body {
   background-size: cover;
   background-image: url("/img/header-ball.png");
 }
-
 .who__can__learn:after {
   content: "";
   position: absolute;
@@ -248,34 +218,28 @@ body {
   background-size: cover;
   background-image: url("/img/header-ball.png");
 }
-
 .who__can__learn .who__can__lear__header {
   margin-bottom: 170px;
   text-align: center;
 }
-
 .who__can__learn .who__can__lear__header h2 {
   font-size: 50px;
   line-height: 130%;
   font-weight: bold;
   margin-bottom: 20px;
 }
-
 .who__can__learn .who__can__lear__header h2 span {
   color: #245ff7;
 }
-
 .who__can__learn .who__can__lear__header p {
   font-size: 24px;
   line-height: 130%;
   font-weight: normal;
 }
-
 .who__can__learn .content {
   display: flex;
   justify-content: space-between;
 }
-
 .who__can__learn .content__block {
   display: flex;
   position: relative;
@@ -287,14 +251,12 @@ body {
   background: linear-gradient(102.62deg, #f8fcff 0%, #f1f9ff 100%);
   box-shadow: 0px 2px 20px rgba(15, 44, 72, 0.08);
 }
-
 .who__can__learn .content__block p {
   text-align: center;
   font-size: 18px;
   line-height: 130%;
   font-weight: normal;
 }
-
 .who__can__learn .content__block::after {
   position: absolute;
   content: "";
@@ -303,45 +265,36 @@ body {
   bottom: 108px;
   left: 115px;
 }
-
 .who__can__learn .content__block:nth-child(1):after {
-  background: url("/img/who-can-img1.png");
+  background: url("/img/who-can-img1.png ");
 }
-
 .who__can__learn .content__block:nth-child(2):after {
-  background: url("/img/who-can-img2.png");
+  background: url("/img/who-can-img2.png ");
 }
-
 .who__can__learn .content__block:nth-child(3):after {
-  background: url("/img/who-can-img3.png");
+  background: url("/img/who-can-img3.png ");
 }
-
 .why__bets {
   width: 100%;
   padding: 0 315px;
   max-width: 1920px;
   margin: 0 auto;
 }
-
 .why__bets__content {
   display: flex;
 }
-
 .why__bets__content .content__left {
   width: 520px;
   margin-right: 30px;
 }
-
 .why__bets__content .content__left h2 {
   font-size: 50px;
   line-height: 130%;
   font-weight: bold;
 }
-
 .why__bets__content .content__left h2 span {
   color: #245ff7;
 }
-
 .why__bets__content .content__right {
   width: 740px;
   font-size: 24px;
@@ -350,7 +303,6 @@ body {
   color: #333333;
   padding-top: 10px;
 }
-
 .why__bets__content .content__right p {
   margin-bottom: 25px;
 }
