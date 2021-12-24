@@ -11,29 +11,30 @@
       font-size: 50px;
       line-height: 130%;
       font-weight: bold;
-
+      margin-bottom: 80px;
       & span {
         color: $color-blue;
       }
     }
   }
 
-  &__content {
+  & .content {
     display: grid;
     grid-template-columns: 630px 630px;
-    grid-template-rows: 100px ;
+    grid-template-rows: repeat(5,100px) ;
     //grid-column-gap: 30px;
     //grid-row-gap: 30px;
     grid-gap: 30px;
+    box-sizing: border-box;
+
+    align-items: center;
 
     & .item{
       align-content: center;
       position: static;
-      width: 497px;
-      height: 31px;
       left: 103px;
       top: 34.5px;
-
+      padding: 23px 0;
       font-weight: 500;
       font-size: 24px;
       line-height: 130%;
@@ -42,11 +43,15 @@
       background: #245FF7;
       border-radius: 4px;
 
+      & span.number{
 
-      & span{
         font-size: 40px;
         line-height: 130%;
         padding: 24px 30px;
+        align-self: center;
+      }
+      & span.text{
+       padding-bottom: 10px;
       }
     }
     }

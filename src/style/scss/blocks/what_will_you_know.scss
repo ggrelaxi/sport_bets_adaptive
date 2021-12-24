@@ -1,6 +1,6 @@
 @import '../variables.scss';
 
-.who__can__learn {
+.what__will__you__know {
   background-color: $color-light-grey;
   position: relative;
   overflow: hidden;
@@ -22,7 +22,7 @@
     bottom: -55px;
     left: -30px;
     background-size: cover;
-    background-image: url('../../../img/header-ball.png');
+    background-color: #E8F1F9;
   }
 
   &:after {
@@ -39,10 +39,10 @@
     top: 15px;
     right: -70px;
     background-size: cover;
-    background-image: url('../../../img/header-ball.png');
+    background-color: #E8F1F9;
   }
 
-  & .who__can__lear__header {
+  & .what__will__you__know__header {
     margin-bottom: 170px;
     text-align: center;
     h2 {
