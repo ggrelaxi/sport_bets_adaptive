@@ -1,10 +1,11 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const terser = require('gulp-terser');
 const imagemin = require('gulp-imagemin');
+const rebase = require('gulp-css-url-rebase');
 
 const browserSync = require('browser-sync').create();
 

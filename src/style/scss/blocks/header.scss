@@ -13,7 +13,7 @@
             rgba(1, 7, 51, 0.8) 48.11%,
             rgba(1, 7, 51, 0) 76.65%
         ),
-        url('../../../img/header-bg.jpg');
+        url('/img/header-bg.jpg');
 
     overflow: hidden;
 
@@ -31,7 +31,7 @@
         top: 120px;
         left: -70px;
         background-size: cover;
-        background-image: url('build/img/header-ball.png');
+        background-image: url('/img/header-ball.png');
     }
 
     &__content {
