@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
   height: 100vh;
   max-height: 850px;
-  padding: 60px 315px 0 315px;
+  padding: 60px 265px 0 315px;
   background: linear-gradient(98.72deg, #010733 0%, rgba(1, 7, 51, 0.8) 48.11%, rgba(1, 7, 51, 0) 76.65%), url("../../../img/man_bg.jpg");
   overflow: hidden;
 }
@@ -53,48 +53,156 @@ body {
   justify-content: space-between;
   height: 100%;
 }
-.access__form__content .content__left .logo {
-  display: flex;
-  align-items: center;
-  font-size: 26px;
+.access__form__content .content__left .reg__title {
+  position: absolute;
+  width: 630px;
+  height: 120px;
+  left: 315px;
+  top: 120px;
+  font-style: normal;
   font-weight: bold;
-  margin-bottom: 180px;
+  font-size: 50px;
+  line-height: 120%;
 }
-.access__form__content .content__left .logo img {
-  margin-right: 7px;
-}
-.access__form__content .content__left .logo__text span {
+.access__form__content .content__left .reg__title span {
   color: #245ff7;
 }
-.access__form__content .content__left .description h1 {
-  font-size: 50px;
-  line-height: 130%;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-.access__form__content .content__left .description p {
-  font-weight: normal;
+.access__form__content .content__left .description {
+  position: absolute;
+  width: 630px;
+  height: 62px;
+  left: 315px;
+  top: 270px;
   font-size: 24px;
-  line-height: 130%;
+  line-height: 31px;
   margin-bottom: 60px;
-  font-weight: 300;
+  font-weight: 400;
 }
-.access__form__content .content__left .description button {
-  background-color: #245ff7;
-  border-radius: 6px;
-  width: 260px;
-  padding: 20px 30px;
+.access__form__content .content__left .price__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  position: absolute;
+  width: 221px;
+  height: 75px;
+  left: 315px;
+  top: 372px;
+}
+.access__form__content .content__left .price__block .sales {
+  position: static;
+  width: 120px;
+  height: 23px;
+  left: 0;
+  top: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  text-transform: uppercase;
+}
+.access__form__content .content__left .price__block .price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 130%;
+  color: #E43700;
+  display: flex;
+}
+.access__form__content .content__left .price__block .price .old__price {
+  padding-left: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  color: #6B789A;
+  display: flex;
+  align-items: center;
+}
+.access__form__content .content__left .price__block .price .old__price .through {
+  text-decoration: line-through;
+}
+.access__form__content .content__left .form__reg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  position: absolute;
+  width: 551px;
+  height: 180px;
+  left: 315px;
+  top: 467px;
+}
+.access__form__content .content__left .form__reg input {
+  padding: 19px 20px;
+  margin-bottom: 10px;
+  position: static;
+  width: 551px;
   height: 59px;
+  left: 0;
+  top: 0;
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+.access__form__content .content__left .form__reg button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  position: static;
+  width: 551px;
+  height: 59px;
+  left: 0;
+  top: 0;
+  background: #8E8E93;
+  border-radius: 6px;
   color: #ffffff;
   outline: none;
   border: none;
   cursor: pointer;
 }
-.access__form__content .content__left .description button:hover {
+.access__form__content .content__left .form__reg button:hover {
   background-color: #487bff;
 }
-.access__form__content .content__left .description button:active {
+.access__form__content .content__left .form__reg button:active {
   background-color: #0e49df;
+}
+.access__form__content .content__left .form__reg .agreement {
+  position: static;
+  width: 551px;
+  height: 42px;
+  left: 0px;
+  top: 69px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 10px 0;
+}
+.access__form__content .content__left .form__reg .agreement .reg__checkbox {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 138px;
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+.access__form__content .content__left .form__reg .agreement .reg__label__checkbox {
+  position: absolute;
+  width: 525px;
+  height: 42px;
+  left: 26px;
+  top: 138px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+.access__form__content .content__left .form__reg .agreement .reg__label__checkbox span {
+  color: #245ff7;
 }
 .access__form__content .content__right {
   display: flex;
