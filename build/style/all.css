@@ -347,7 +347,6 @@ body {
   align-items: center;
 }
 .learn__program .content .item {
-  align-content: center;
   position: static;
   left: 103px;
   top: 34.5px;
@@ -364,9 +363,6 @@ body {
   line-height: 130%;
   padding: 24px 30px;
   align-self: center;
-}
-.learn__program .content .item span.text {
-  padding-bottom: 10px;
 }
 .questions {
   width: 100%;

@@ -30,7 +30,7 @@
     align-items: center;
 
     & .item{
-      align-content: center;
+     
       position: static;
       left: 103px;
       top: 34.5px;
@@ -51,7 +51,8 @@
         align-self: center;
       }
       & span.text{
-       padding-bottom: 10px;
+       //padding-bottom: 10px;
+
       }
     }
     }
