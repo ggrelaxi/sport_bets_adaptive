@@ -412,6 +412,9 @@ body {
 .questions__content .right .acor-container .row__container label:after {
   content: "+";
   float: right;
+  color: #245ff7;
+  font-size: 35px;
+  font-weight: lighter;
 }
 .questions__content .right .acor-container .row__container input {
   display: none;

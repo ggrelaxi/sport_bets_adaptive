@@ -53,8 +53,12 @@
           }
 
           label:after {
-            content: '+';
+            content: '\002B';
             float: right;
+            color: $color-blue;
+
+            font-size: 35px;
+            font-weight: lighter;
           }
 
           input {
