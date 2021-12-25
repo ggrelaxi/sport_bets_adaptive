@@ -7,10 +7,11 @@
   margin: 0 auto;
 
   &__content {
+    color: #333333;
     display: flex;
 
     .left {
-      width: 520px;
+      width: 630px;
       margin-right: 30px;
 
       h2 {
@@ -24,68 +25,73 @@
       }
     }
 
-    //left
-
+    //right
     & .right {
+
       & .acor-container {
-        margin: 20px 0;
+        margin: 0 0 20px 0;
 
-        input:checked + label:before {
-          transition: transform .15s;
-          transform: rotate(45deg);
-        }
+        & .row__container {
+          width: 630px;
 
-        input:checked + label + .acor-body {
-          height: auto;
-          margin-top: -5px;
-          color: #000;
-          //padding: 20px 30px 10px;
-        }
+          label {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 10;
+            transition: color .35s;
+            height: 62px;
 
-        & .acor-body {
-          width: calc(100% - 40px);
-          //margin: 0 auto;
-          height: 0;
-          color: rgba(0, 0, 0, 0);;
-          line-height: 18px;
-          //padding: 0 30px;
-          box-sizing: border-box;
-          transition: color 0.5s, padding 0.5s;
-          overflow: hidden;
-          font-size: 16px;
-          //box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);
-
-          & p {
-            margin: 0 0 10px;
+            span {
+              top: calc(50% - 22px / 2);
+              font-size: 18px;
+              line-height: 120%;
+            }
           }
-        } //.acor-body
 
-        label {
-          cursor: pointer;
-          display: block;
-          //padding: 15px 20px;
-          width: 100%;
-          font-weight: 300;
-          box-sizing: border-box;
-          z-index: 100;
-          font-size: 18px;
-          margin: 0 0 5px;
-          transition: color .35s;
-        }
+          label:after {
+            content: '+';
+            float: right;
+          }
 
-        label:before {
-          content: '+';
-          //content: '\276F';
-          float: right;
-        }
+          input {
+            display: none;
+          }
 
-        input {
-          display: none;
+          & input:checked + label:after {
+            transition: transform .15s;
+            transform: rotate(45deg);
+          }
+
+          input:checked + label + .acor-body {
+            height: auto;
+            margin-top: -5px;
+            color: #333333;
+          }
+
+          & .acor-body {
+            width: calc(100% - 40px);
+            height: 0;
+            color: rgba(0, 0, 0, 0);;
+            line-height: 18px;
+            box-sizing: border-box;
+            transition: color 0.5s, padding 0.5s;
+            overflow: hidden;
+            font-size: 16px;
+
+            & p {
+              margin: 0 0 20px;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 120%;
+            }
+          }
         }
-      } //.acor-container
-    } //.right
-  } //__content
+      }
+    }
+  }
 }
-
-//.acor-container input:checked + label {
-//}

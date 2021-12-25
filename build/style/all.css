@@ -375,10 +375,11 @@ body {
   margin: 0 auto;
 }
 .questions__content {
+  color: #333333;
   display: flex;
 }
 .questions__content .left {
-  width: 520px;
+  width: 630px;
   margin-right: 30px;
 }
 .questions__content .left h2 {
@@ -390,18 +391,44 @@ body {
   color: #245ff7;
 }
 .questions__content .right .acor-container {
-  margin: 20px 0;
+  margin: 0 0 20px 0;
 }
-.questions__content .right .acor-container input:checked + label:before {
+.questions__content .right .acor-container .row__container {
+  width: 630px;
+}
+.questions__content .right .acor-container .row__container label {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+  transition: color 0.35s;
+  height: 62px;
+}
+.questions__content .right .acor-container .row__container label span {
+  top: calc(50% - 11px);
+  font-size: 18px;
+  line-height: 120%;
+}
+.questions__content .right .acor-container .row__container label:after {
+  content: "+";
+  float: right;
+}
+.questions__content .right .acor-container .row__container input {
+  display: none;
+}
+.questions__content .right .acor-container .row__container input:checked + label:after {
   transition: transform 0.15s;
   transform: rotate(45deg);
 }
-.questions__content .right .acor-container input:checked + label + .acor-body {
+.questions__content .right .acor-container .row__container input:checked + label + .acor-body {
   height: auto;
   margin-top: -5px;
-  color: #000;
+  color: #333333;
 }
-.questions__content .right .acor-container .acor-body {
+.questions__content .right .acor-container .row__container .acor-body {
   width: calc(100% - 40px);
   height: 0;
   color: rgba(0, 0, 0, 0);
@@ -411,26 +438,12 @@ body {
   overflow: hidden;
   font-size: 16px;
 }
-.questions__content .right .acor-container .acor-body p {
-  margin: 0 0 10px;
-}
-.questions__content .right .acor-container label {
-  cursor: pointer;
-  display: block;
-  width: 100%;
-  font-weight: 300;
-  box-sizing: border-box;
-  z-index: 100;
-  font-size: 18px;
-  margin: 0 0 5px;
-  transition: color 0.35s;
-}
-.questions__content .right .acor-container label:before {
-  content: "+";
-  float: right;
-}
-.questions__content .right .acor-container input {
-  display: none;
+.questions__content .right .acor-container .row__container .acor-body p {
+  margin: 0 0 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
 }
 .whats__learn {
   width: 100%;
