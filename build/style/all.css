@@ -389,26 +389,48 @@ body {
 .questions__content .left span {
   color: #245ff7;
 }
-.questions__content .right {
-  width: 740px;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 130%;
-  color: #333333;
-  padding-top: 10px;
+.questions__content .right .acor-container {
+  margin: 20px 0;
 }
-.questions__content .right h3 {
-  font-size: 24px;
-  line-height: 130%;
-  color: #333333;
-  font-weight: bold;
-  margin-bottom: 15px;
+.questions__content .right .acor-container input:checked + label:before {
+  transition: transform 0.15s;
+  transform: rotate(45deg);
 }
-.questions__content .right p {
+.questions__content .right .acor-container input:checked + label + .acor-body {
+  height: auto;
+  margin-top: -5px;
+  color: #000;
+}
+.questions__content .right .acor-container .acor-body {
+  width: calc(100% - 40px);
+  height: 0;
+  color: rgba(0, 0, 0, 0);
+  line-height: 18px;
+  box-sizing: border-box;
+  transition: color 0.5s, padding 0.5s;
+  overflow: hidden;
+  font-size: 16px;
+}
+.questions__content .right .acor-container .acor-body p {
+  margin: 0 0 10px;
+}
+.questions__content .right .acor-container label {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  font-weight: 300;
+  box-sizing: border-box;
+  z-index: 100;
   font-size: 18px;
-  line-height: 130%;
-  font-weight: normal;
-  margin-bottom: 30px;
+  margin: 0 0 5px;
+  transition: color 0.35s;
+}
+.questions__content .right .acor-container label:before {
+  content: "+";
+  float: right;
+}
+.questions__content .right .acor-container input {
+  display: none;
 }
 .whats__learn {
   width: 100%;
