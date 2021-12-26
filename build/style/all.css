@@ -99,7 +99,6 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 130%;
-  /* or 23px */
   text-transform: uppercase;
 }
 .access__form__content .content__left .price__block .price {
@@ -109,6 +108,9 @@ body {
   line-height: 130%;
   color: #E43700;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .access__form__content .content__left .price__block .price .old__price {
   padding-left: 15px;
@@ -156,7 +158,7 @@ body {
   height: 59px;
   left: 0;
   top: 0;
-  background: #8E8E93;
+  background-color: #245ff7;
   border-radius: 6px;
   color: #ffffff;
   outline: none;
@@ -169,11 +171,14 @@ body {
 .access__form__content .content__left .form__reg button:active {
   background-color: #0e49df;
 }
+.access__form__content .content__left .form__reg button .disabled {
+  background-color: #8e8e93;
+}
 .access__form__content .content__left .form__reg .agreement {
   position: static;
   width: 551px;
   height: 42px;
-  left: 0px;
+  left: 0;
   top: 69px;
   flex: none;
   order: 1;

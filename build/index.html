@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap"
           rel="stylesheet">
     <title>Document</title>
+
 </head>
 <body>
 <!-- Блок хедер -->
@@ -152,12 +153,12 @@
                     <div class="sales">Скидка 97%</div>
                     <div class="price">
                         29 ₽
-                        <span class="old__price">
+                        <div class="old__price">
                             вместо
                             <span class="through">
                                 889 ₽
                             </span>
-                        </span>
+                        </div>
                     </div>
                 </div>
 
@@ -440,12 +441,13 @@
                     <div class="sales">Скидка 97%</div>
                     <div class="price">
                         29 ₽
-                        <span class="old__price">
+                        <div class="old__price">
                             вместо
                             <span class="through">
                                 889 ₽
-                            </span>
                         </span>
+                        </div>
+
                     </div>
                 </div>
 
@@ -458,10 +460,9 @@
                                placeholder="Электронная почта">
                     </div>
 
-                    <button id="submitBtn1">Записаться</button>
+                    <button id="submitBtn1" class="disabled">Записаться</button>
                     <div class="agreement">
                         <input class="reg__checkbox" type="checkbox" id="checkbox1">
-                        <!--                        <div class="reg__checkbox" id="checkbox-mark"></div>-->
                         <label class="reg__label__checkbox" for="checkbox1">
                             Нажимая на кнопку, я соглашаюсь на
                             <span class="href__to"> обработку персональных данных</span>
@@ -533,6 +534,58 @@
         </div>
     </div>
 </footer>
+<script>
+
+    const regularValidation =
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    const button0 = document.getElementById("submitBtn0");
+    const button1 = document.getElementById("submitBtn1");
+    const email0 = document.getElementById("email0");
+    const email1 = document.getElementById("email1");
+    const checkbox0 = document.getElementById("checkbox0");
+    const checkbox1 = document.getElementById("checkbox1");
+    button1.classList.add('disabled')
+    email0.addEventListener("input", event => isFormValid0(event.target.value));
+    email1.addEventListener("input", event => isFormValid1(event.target.value));
+
+    checkbox0.addEventListener("click", event => isFormValid0(email0.value));
+    checkbox1.addEventListener("click", event => isFormValid1(email1.value));
+    // checkbox1.addEventListener("click", event => alert(event));
+
+    const isFormValid0 = (email) => {
+        alert('fff')
+        let isValid = regularValidation.test(String(email).toLowerCase());
+
+        if (!checkbox0.checked) {
+            button0.classList.add('disabled')
+            return false
+        }
+
+        if (!isValid) {
+            button0.classList.add('disabled')
+            return false
+        }
+
+        button0.classList.remove('disabled')
+    }
+    const isFormValid1 = (email) => {
+        let isValid = regularValidation.test(String(email).toLowerCase());
+
+        if (!checkbox1.checked) {
+            button0.classList.add('disabled')
+            return false
+        }
+
+        if (!isValid) {
+            button1.classList.add('disabled')
+            return false
+        }
+
+        button1.classList.remove('disabled')
+    }
+
+</script>
 
 </body>
 </html>
