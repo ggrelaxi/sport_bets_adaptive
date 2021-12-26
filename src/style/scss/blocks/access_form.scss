@@ -158,24 +158,23 @@
           left: 0;
           top: 0;
 
-          background-color: $color-blue;
           border-radius: 6px;
           color: $color-white;
           outline: none;
           border: none;
           cursor: pointer;
+          background-color: $color-grey;
 
-          &:hover {
-            background-color: $hover-background;
-          }
+          .able {
+            background-color: $color-blue;
 
-          &:active {
-            background-color: $press-background;
-          }
+            &:hover {
+              background-color: $hover-background;
+            }
 
-           .disabled {
-
-            background-color: $color-grey;
+            &:active {
+              background-color: $press-background;
+            }
           }
         }
 

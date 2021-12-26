@@ -158,21 +158,21 @@ body {
   height: 59px;
   left: 0;
   top: 0;
-  background-color: #245ff7;
   border-radius: 6px;
   color: #ffffff;
   outline: none;
   border: none;
   cursor: pointer;
+  background-color: #8e8e93;
 }
-.access__form__content .content__left .form__reg button:hover {
+.access__form__content .content__left .form__reg button .able {
+  background-color: #245ff7;
+}
+.access__form__content .content__left .form__reg button .able:hover {
   background-color: #487bff;
 }
-.access__form__content .content__left .form__reg button:active {
+.access__form__content .content__left .form__reg button .able:active {
   background-color: #0e49df;
-}
-.access__form__content .content__left .form__reg button .disabled {
-  background-color: #8e8e93;
 }
 .access__form__content .content__left .form__reg .agreement {
   position: static;

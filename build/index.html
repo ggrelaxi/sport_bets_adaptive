@@ -157,25 +157,25 @@
                             вместо
                             <span class="through">
                                 889 ₽
-                            </span>
+                        </span>
                         </div>
+
                     </div>
                 </div>
 
                 <!-- form-->
                 <form class="form__reg">
-                    <label class="reg__label__email" for="email0"
+                    <label class="reg__label__email" for="email1"
                            id="label-email0"></label>
                     <div class="reg__container__label__email">
                         <input class="reg__input-email" type="email" id="email0"
                                placeholder="Электронная почта">
                     </div>
 
-                    <button id="submitBtn0">Записаться</button>
+                    <button id="submitBtn0" class="able">Записаться</button>
                     <div class="agreement">
                         <input class="reg__checkbox" type="checkbox" id="checkbox0">
-                        <!--                        <div class="reg__checkbox" id="checkbox-mark"></div>-->
-                        <label class="reg__label__checkbox" for="checkbox0">
+                        <label class="reg__label__checkbox" for="checkbox1">
                             Нажимая на кнопку, я соглашаюсь на
                             <span class="href__to"> обработку персональных данных</span>
                             и с
@@ -460,7 +460,7 @@
                                placeholder="Электронная почта">
                     </div>
 
-                    <button id="submitBtn1" class="disabled">Записаться</button>
+                    <button id="submitBtn1" class="able">Записаться</button>
                     <div class="agreement">
                         <input class="reg__checkbox" type="checkbox" id="checkbox1">
                         <label class="reg__label__checkbox" for="checkbox1">
@@ -545,7 +545,7 @@
     const email1 = document.getElementById("email1");
     const checkbox0 = document.getElementById("checkbox0");
     const checkbox1 = document.getElementById("checkbox1");
-    button1.classList.add('disabled')
+
     email0.addEventListener("input", event => isFormValid0(event.target.value));
     email1.addEventListener("input", event => isFormValid1(event.target.value));
 
@@ -554,35 +554,34 @@
     // checkbox1.addEventListener("click", event => alert(event));
 
     const isFormValid0 = (email) => {
-        alert('fff')
         let isValid = regularValidation.test(String(email).toLowerCase());
 
         if (!checkbox0.checked) {
-            button0.classList.add('disabled')
+            button0.classList.add('able')
             return false
         }
 
         if (!isValid) {
-            button0.classList.add('disabled')
+            button0.classList.add('able')
             return false
         }
 
-        button0.classList.remove('disabled')
+        button0.classList.remove('able')
     }
     const isFormValid1 = (email) => {
         let isValid = regularValidation.test(String(email).toLowerCase());
 
         if (!checkbox1.checked) {
-            button0.classList.add('disabled')
+            button0.classList.add('able')
             return false
         }
 
         if (!isValid) {
-            button1.classList.add('disabled')
+            button1.classList.add('able')
             return false
         }
 
-        button1.classList.remove('disabled')
+        button1.classList.remove('able')
     }
 
 </script>
