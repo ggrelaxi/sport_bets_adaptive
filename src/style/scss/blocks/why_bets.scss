@@ -37,3 +37,71 @@
         }
     }
 }
+
+@media (max-width: 1550px) {
+    .why__bets {
+        padding: 0 200px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .why__bets {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .why__bets {
+        padding: 0 100px;
+
+        & .wrapper__section {
+            padding: 70px 0;
+
+            & .why__bets__content {
+                flex-direction: column;
+
+                & .content__left,
+                & .content__right {
+                    width: 100%;
+                }
+
+                h2 {
+                    font-size: 36px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .why__bets {
+        padding: 0 20px;
+
+        & .wrapper__section {
+            padding: 70px 0;
+
+            & .why__bets__content {
+                flex-direction: column;
+
+                & .content__left,
+                & .content__right {
+                    width: 100%;
+                }
+
+                h2 {
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

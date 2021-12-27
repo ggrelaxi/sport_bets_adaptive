@@ -1,117 +1,165 @@
 @import '../variables.scss';
 
 .what__will__you__know {
-  background-color: $color-light-grey;
-  position: relative;
-  overflow: hidden;
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 315px;
+    background-color: $color-light-grey;
+    position: relative;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 315px;
 
-  &:before {
-    content: '';
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -webkit-filter: blur(5px);
-    opacity: 0.3;
-    bottom: -55px;
-    left: -30px;
-    background-size: cover;
-    background-color: #E8F1F9;
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -webkit-filter: blur(5px);
-    opacity: 0.3;
-    top: 15px;
-    right: -70px;
-    background-size: cover;
-    background-color: #E8F1F9;
-  }
-
-  & .what__will__you__know__header {
-    margin-bottom: 170px;
-    text-align: center;
-    h2 {
-      font-size: 50px;
-      line-height: 130%;
-      font-weight: bold;
-      margin-bottom: 20px;
-
-      & span {
-        color: $color-blue;
-      }
+    &:before {
+        content: '';
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -webkit-filter: blur(5px);
+        opacity: 0.3;
+        bottom: -55px;
+        left: -30px;
+        background-size: cover;
+        background-color: #e8f1f9;
     }
 
+    &:after {
+        content: '';
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -webkit-filter: blur(5px);
+        opacity: 0.3;
+        top: 15px;
+        right: -70px;
+        background-size: cover;
+        background-color: #e8f1f9;
+    }
 
-  }
-
-  & .content {
-    display: grid;
-    grid-template-columns: repeat(3, 410px);
-    grid-template-rows: 195px ;
-    grid-column-gap: 30px;
-    grid-row-gap: 131px;
-
-
-    &__block {
-      display: flex;
-      position: relative;
-      justify-content: center;
-      align-items: flex-end;
-      padding: 40px 30px;
-      width: 410px;
-      height: 195px;
-      background: linear-gradient(102.62deg, #f8fcff 0%, #f1f9ff 100%);
-      box-shadow: 0px 2px 20px rgba(15, 44, 72, 0.08);
-
-      & p {
+    & .what__will__you__know__header {
+        margin-bottom: 170px;
         text-align: center;
-        font-size: 18px;
-        line-height: 130%;
-        font-weight: normal;
-      }
+        h2 {
+            font-size: 50px;
+            line-height: 130%;
+            font-weight: bold;
+            margin-bottom: 20px;
+
+            & span {
+                color: $color-blue;
+            }
+        }
     }
 
-    &__block::after {
-      position: absolute;
-      content: '';
-      width: 180px;
-      height: 180px;
-      bottom: 108px;
-      left: 115px;
-    }
+    & .content {
+        display: grid;
+        grid-template-columns: repeat(3, 410px);
+        grid-template-rows: 195px;
+        grid-column-gap: 30px;
+        grid-row-gap: 131px;
 
-    &__block:nth-child(1):after {
-      background: url('../../../img/what-will-know-img1.png ');
+        &__block {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 40px 30px;
+            width: 410px;
+            height: 195px;
+            background: linear-gradient(102.62deg, #f8fcff 0%, #f1f9ff 100%);
+            box-shadow: 0px 2px 20px rgba(15, 44, 72, 0.08);
+
+            & p {
+                text-align: center;
+                font-size: 18px;
+                line-height: 130%;
+                font-weight: normal;
+            }
+        }
+
+        &__block::after {
+            position: absolute;
+            content: '';
+            width: 180px;
+            height: 180px;
+            bottom: 108px;
+            left: 115px;
+        }
+
+        &__block:nth-child(1):after {
+            background: url('../../../img/what-will-know-img1.png ');
+        }
+        &__block:nth-child(2):after {
+            background: url('../../../img/what-will-know-img2.png ');
+        }
+        &__block:nth-child(3):after {
+            background: url('../../../img/what-will-know-img3.png ');
+        }
+        &__block:nth-child(4):after {
+            background: url('../../../img/what-will-know-img4.png');
+        }
+        &__block:nth-child(5):after {
+            background: url('../../../img/what-will-know-img5.png');
+        }
+        &__block:nth-child(6):after {
+            background: url('../../../img/what-will-know-img6.png');
+        }
     }
-    &__block:nth-child(2):after {
-      background: url('../../../img/what-will-know-img2.png ');
+}
+
+@media (max-width: 1800px) {
+    .what__will__you__know {
+        padding: 0 200px;
     }
-    &__block:nth-child(3):after {
-      background: url('../../../img/what-will-know-img3.png ');
+}
+
+@media (max-width: 1500px) {
+    .what__will__you__know {
+        .content {
+            grid-template-columns: repeat(2, 50%);
+
+            .content__block {
+                width: 100%;
+
+                &:after {
+                    left: unset;
+                }
+            }
+        }
     }
-    &__block:nth-child(4):after{
-      background: url('../../../img/what-will-know-img4.png');
+}
+
+@media (max-width: 1100px) {
+    .what__will__you__know {
+        padding: 0 100px;
     }
-    &__block:nth-child(5):after{
-      background: url('../../../img/what-will-know-img5.png');
+}
+
+@media (max-width: 930px) {
+    .what__will__you__know {
+        padding: 0 20px;
+        .wrapper__section {
+            padding: 50px 0px;
+        }
+        .what__will__you__know__header {
+            h2 {
+                font-size: 30px;
+            }
+        }
+        .content {
+            grid-template-columns: repeat(1, 100%);
+
+            .content__block {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
     }
-    &__block:nth-child(6):after{
-      background: url('../../../img/what-will-know-img6.png');
-    }
-  }
 }

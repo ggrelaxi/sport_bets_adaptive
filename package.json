@@ -20,7 +20,9 @@
     "node-sass": "^7.0.0"
   },
   "dependencies": {
-    "sass": "^1.45.1",
-    "normalize.css": "^8.0.1"
+    "gulp-css-rebase": "^2.0.5",
+    "gulp-rebase-css-urls": "^0.0.2",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.45.1"
   }
 }

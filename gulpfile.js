@@ -5,12 +5,14 @@ const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const terser = require('gulp-terser');
 const imagemin = require('gulp-imagemin');
+const rebase = require('gulp-rebase-css-urls');
 
 const browserSync = require('browser-sync').create();
 
 gulp.task('style', function () {
     return gulp
         .src('src/style/**/*.scss')
+        .pipe(rebase('src/img'))
         .pipe(sass())
         .pipe(sourcemaps.init())
         .pipe(concat('all.css'))
@@ -22,11 +24,11 @@ gulp.task('style', function () {
 
 gulp.task('es', function () {
     return gulp
-        .src('./src/**/*.js')
+        .src('./src/js/**/*.js')
         .pipe(sourcemaps.init())
         .pipe(terser())
-        .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('./build/js'));
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('build/js'));
 });
 
 gulp.task('imgmin', function () {
