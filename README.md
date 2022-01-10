@@ -1,2 +1,2 @@
-# gulp-for-dev
-gulp assembly for frontend evelopment
+# Adaptive maket
+https://ggrelaxi.github.io/sport_bets_adaptive/
