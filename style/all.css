@@ -54,7 +54,7 @@ body {
   height: 100vh;
   max-height: 850px;
   padding: 60px 315px 0 315px;
-  background: linear-gradient(98.72deg, #010733 0%, rgba(1, 7, 51, 0.8) 48.11%, rgba(1, 7, 51, 0) 76.65%), url("../../../img/header-bg.jpg");
+  background: linear-gradient(98.72deg, #010733 0%, rgba(1, 7, 51, 0.8) 48.11%, rgba(1, 7, 51, 0) 76.65%), url("/img/header-bg.jpg");
   overflow: hidden; }
   .header:before {
     content: '';
@@ -136,7 +136,7 @@ body {
     bottom: -55px;
     left: -30px;
     background-size: cover;
-    background-image: url("build/img/header-ball.png"); }
+    background-image: url("/img/header-ball.png"); }
   .who__can__learn:after {
     content: '';
     position: absolute;
@@ -151,7 +151,7 @@ body {
     top: 15px;
     right: -70px;
     background-size: cover;
-    background-image: url("../../../img/header-ball.png"); }
+    background-image: url("/img/header-ball.png"); }
   .who__can__learn .who__can__lear__header {
     margin-bottom: 170px;
     text-align: center; }
@@ -192,11 +192,11 @@ body {
       bottom: 108px;
       left: 115px; }
     .who__can__learn .content__block:nth-child(1):after {
-      background: url("../../../img/who-can-img1.png "); }
+      background: url("/img/who-can-img1.png "); }
     .who__can__learn .content__block:nth-child(2):after {
-      background: url("../../../img/who-can-img2.png "); }
+      background: url("/img/who-can-img2.png "); }
     .who__can__learn .content__block:nth-child(3):after {
-      background: url("../../../img/who-can-img3.png "); }
+      background: url("/img/who-can-img3.png "); }
 
 .why__bets {
   width: 100%;
